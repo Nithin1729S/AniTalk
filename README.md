@@ -11,7 +11,11 @@ The Web Application is hosted on Vercel and the postgres database is hosted on R
 ## Demo Video
 
 
-https://github.com/Nithin1729S/AniTalk/assets/78496667/520e17e7-670e-47c8-b7b8-519bed52cd01
+
+
+https://github.com/Nithin1729S/AniTalk/assets/78496667/4de9340b-d4d9-4acb-aae9-e4fb56156948
+
+
 
 
 
