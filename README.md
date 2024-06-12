@@ -80,8 +80,7 @@ The application exposes several REST APIs that allow third-party developers to e
 - **Access the Web App**: Open your web browser and go to `http://127.0.0.1:8000/` after installing the application.
 - Or visit the live website.
 - **Use the APIs**: Use the endpoints listed above to access the REST APIs.
-- Ex: Use `http://127.0.0.1:8000/api/topics` to get a json data of all topics currently in the webapp.
-    ```
+- Ex: Use `http://127.0.0.1:8000/api/topics` if installed on a local machine to get a json data of all topics currently in the webapp.
 
 
 
