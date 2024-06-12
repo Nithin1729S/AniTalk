@@ -3,7 +3,6 @@ Django
 django-cors-headers
 django-environ
 djangorestframework
-gunicorn
 packaging
 pillow
 psycopg2-binary
