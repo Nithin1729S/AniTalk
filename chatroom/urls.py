@@ -18,5 +18,6 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('base.urls')) #go to base folder urls.py whenever you find anything
+    path('',include('base.urls')), #go to base folder urls.py whenever you find anything
+    path('api/',include('base.api.urls'))
 ]
