@@ -28,7 +28,7 @@
         <div class="header__user">
           <a href="{% url 'user-profile' request.user.id %}">
             <div class="avatar avatar--medium active">
-              <img src="{{request.user.avatar.url}}" />
+              <img src="https://api.multiavatar.com/{{request.user.username}}.svg"/> 
             </div>
             <p>{{request.user.username}} <span>@{{request.user.username}}</span></p>
           </a>
@@ -43,7 +43,7 @@
 
         <!-- Not Logged In -->
         <a href="{% url 'login' %}">
-          <img src="{% static 'images/avatar.svg' %}" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg" style="border-radius: 50%;" />
           <p>Login</p>
         </a>
         {% endif %}

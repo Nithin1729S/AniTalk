@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # from dotenv import load_dotenv
@@ -95,11 +96,11 @@ WSGI_APPLICATION = 'chatroom.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'bRmRWjVeaKLfOHoLzusZnNfFVsQPkZUV',
-        'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '38484',
+        'NAME': str(os.getenv('NAMEA')),
+        'USER': str(os.getenv('USERA')),
+        'PASSWORD': str(os.getenv('PASSWORDA')),
+        'HOST': str(os.getenv('HOSTA')),
+        'PORT': str(os.getenv('PORTA')),
     }
 }
 
