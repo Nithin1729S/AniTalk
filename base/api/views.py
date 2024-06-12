@@ -1,4 +1,6 @@
 from rest_framework.decorators import api_view
+from rest_framework import status
+from django.core.exceptions import ObjectDoesNotExist
 from rest_framework.response import Response
 from base.models import Room,Topic,User,Message
 from .serializers import RoomSerializer,TopicSerializer,UserSerializer,MessageSerializer
@@ -20,49 +22,61 @@ def getRoutes(request):
     return Response(routes)
 
 @api_view(['GET'])
-def getRooms(request):
-    rooms=Room.objects.all()
-    serializer=RoomSerializer(rooms,many=True)
+def getForums(request):
+    rooms = Room.objects.all()
+    serializer = RoomSerializer(rooms, many=True)
     return Response(serializer.data)
 
 @api_view(['GET'])
-def getRoom(request,pk):
-    rooms=Room.objects.get(id=pk)
-    serializer=RoomSerializer(rooms,many=False)
-    return Response(serializer.data)
+def getForum(request, pk):
+    try:
+        room = Room.objects.get(id=pk)
+        serializer = RoomSerializer(room, many=False)
+        return Response(serializer.data)
+    except ObjectDoesNotExist:
+        return Response({"error": "Forum not found"}, status=status.HTTP_404_NOT_FOUND)
 
 @api_view(['GET'])
 def getTopics(request):
-    topics=Topic.objects.all()
-    serializer=TopicSerializer(topics,many=True)
+    topics = Topic.objects.all()
+    serializer = TopicSerializer(topics, many=True)
     return Response(serializer.data)
 
 @api_view(['GET'])
-def getTopic(request,pk):
-    topics=Topic.objects.get(id=pk)
-    serializer=TopicSerializer(topics,many=False)
-    return Response(serializer.data)
+def getTopic(request, pk):
+    try:
+        topic = Topic.objects.get(id=pk)
+        serializer = TopicSerializer(topic, many=False)
+        return Response(serializer.data)
+    except ObjectDoesNotExist:
+        return Response({"error": "Topic not found"}, status=status.HTTP_404_NOT_FOUND)
 
 @api_view(['GET'])
 def getUsers(request):
-    users=User.objects.all()
-    serializer=UserSerializer(users,many=True)
+    users = User.objects.all()
+    serializer = UserSerializer(users, many=True)
     return Response(serializer.data)
 
 @api_view(['GET'])
-def getUser(request,pk):
-    users=User.objects.get(id=pk)
-    serializer=UserSerializer(users,many=False)
-    return Response(serializer.data)
+def getUser(request, pk):
+    try:
+        user = User.objects.get(id=pk)
+        serializer = UserSerializer(user, many=False)
+        return Response(serializer.data)
+    except ObjectDoesNotExist:
+        return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
 
 @api_view(['GET'])
 def getMessages(request):
-    users=Message.objects.all()
-    serializer=MessageSerializer(users,many=True)
+    messages = Message.objects.all()
+    serializer = MessageSerializer(messages, many=True)
     return Response(serializer.data)
 
 @api_view(['GET'])
-def getMessage(request,pk):
-    users=Message.objects.get(id=pk)
-    serializer=MessageSerializer(users,many=False)
-    return Response(serializer.data)
+def getMessage(request, pk):
+    try:
+        message = Message.objects.get(id=pk)
+        serializer = MessageSerializer(message, many=False)
+        return Response(serializer.data)
+    except ObjectDoesNotExist:
+        return Response({"error": "Message not found"}, status=status.HTTP_404_NOT_FOUND)

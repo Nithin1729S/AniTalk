@@ -3,8 +3,8 @@ from . import views
 
 urlpatterns=[
     path('',views.getRoutes),
-    path('forums/',views.getRooms),
-    path('forums/<str:pk>',views.getRoom),
+    path('forums/',views.getForums),
+    path('forums/<str:pk>',views.getForum),
     path('topics/',views.getTopics),
     path('topics/<str:pk>',views.getTopic),
     path('users/',views.getUsers),
