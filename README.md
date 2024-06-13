@@ -21,6 +21,35 @@ https://github.com/Nithin1729S/AniTalk/assets/78496667/4de9340b-d4d9-4acb-aae9-e
 
 [Watch the Demo Video on YouTube](https://www.youtube.com/watch?v=6c5A9ZEjpB8)
 
+## Screenshots
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/c4c5d09f-8b40-4fea-9d92-501c6cae3743)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/6033879f-9c89-4124-9167-c9c5cec8021d)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/36690997-acc9-48c2-9d3d-361ff372b989)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/9856a720-cf0d-4a8a-ba2e-0ef8a315682c)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/0fc58cdd-a8a9-4dd3-93d3-c389c9eb8a1f)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/f6983077-be4c-4ac6-9bb1-ee641b326f82)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/b7ba454d-5f05-47d9-9a5f-1d86955f6a02)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/63aa4342-18f2-4b43-b39a-8a1d3f9a4ed3)
+
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/330b3d99-ba9e-4139-ad94-0491612848a3)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/016f723b-8304-4747-b72c-f438b7b097e3)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/24b7ed6d-04e6-4438-a7ad-7f3480582d51)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/b409634f-58a4-4d86-8f1c-ebf6a94904fe)
+
+![image](https://github.com/Nithin1729S/AniTalk/assets/78496667/cbf4801e-a1d2-4929-94f3-ea3bfafaf25e)
+
 
 ## Features
 
