@@ -6,7 +6,7 @@ A Anime Discussion Forum Web Application built using Django. The app allows user
 
 The Web Application is hosted on Vercel and the postgres database is hosted on Railway.
 
-[Live Website]()
+[Live Website](ani-talk-phi.vercel.app)
 
 ## Demo Video
 
