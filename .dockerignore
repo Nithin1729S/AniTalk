@@ -1,0 +1,30 @@
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+.venv/
+env/
+.env/
+
+
+
+# Ignore environment variable files
+*.env
+chatroom/ .env
+# Ignore build directories
+build/
+dist/
+*.egg-info/
+
+# Ignore node_modules (if you use JavaScript/Node)
+node_modules/
+
+# Ignore system files
+.DS_Store
+
+*.mp4
+
+docker pull nithin1729s/anitalk:latest
+docker run -p 8000:8000 nithin1729s/anitalk:latest
