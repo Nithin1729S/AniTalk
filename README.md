@@ -112,6 +112,18 @@ The application exposes several REST APIs that allow third-party developers to e
     python manage.py runserver
     ```
 
+## Docker Image
+
+You can find the Docker image for this project on Docker Hub:
+
+[![Docker Image](https://img.shields.io/docker/v/nithin1729s/anitalk?label=Docker%20Hub&style=flat-square)](https://hub.docker.com/r/nithin1729s/anitalk)
+
+1. **Using the Image from Docker Hub**:
+    ```bash
+    docker pull nithin1729s/anitalk:latest
+    docker run -p 8000:8000 nithin1729s/anitalk:latest
+    ```
+
 ## Using APIs
 
 - **Access the Web App**: Open your web browser and go to `http://127.0.0.1:8000/` after installing the application.
