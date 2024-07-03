@@ -1,6 +1,6 @@
 # AniTalk
 
-A Anime Discussion Forum Web Application built using Django. The app allows users to create accounts, log in, create posts, and engage in discussions about anime. It also provides a set of REST APIs for third-party developers to extract information about animes, users, and messages.
+An Anime Discussion Forum Web Application built using Django. The app allows users to create accounts, log in, create posts, and engage in discussions about anime. It also provides a set of REST APIs for third-party developers to extract information about animes, users, and messages.
 
 ## Live
 
