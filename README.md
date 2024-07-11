@@ -95,8 +95,15 @@ The application exposes several REST APIs that allow third-party developers to e
     ```
 
 3. **Configure Database**:
-    - Set up PostgreSQL and update the `DATABASES` setting in `settings.py` with your database credentials. For better security use a .env file.
-    - Or Use the local sqlite3 database by commenting out the above instruction related code in `settings.py` and uncomment sqlite3 related code.
+    - Set up PostgreSQL and update the `DATABASES` setting in `settings.py` with your database credentials. For better security use a .env file. Create a .env file in charoom directory with below details.
+   ```plaintext
+    NAMEA='NAME_OF_DATABASE'
+    USERA='USERNAME'
+    PASSWORDA='PASSWORD'
+    HOSTA='HOST_ADDRESS'
+    PORTA='PORT_NUMBER'
+    ```
+    - Or Use the local sqlite3 database by commenting out the above instruction related code in `settings.py` and uncomment sqlite3 related code. 
 4. **Run Migrations**:
     ```bash
     python manage.py migrate
